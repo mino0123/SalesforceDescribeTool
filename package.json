@@ -1,0 +1,48 @@
+{
+  "name": "SalesforceDescribeTool",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "jest",
+    "commit": "npm run build && git add . && git commit --amend -m 'Add files' && git push origin master -f"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mino0123/SalesforceDescribeTool.git"
+  },
+  "keywords": [],
+  "author": "mino0123",
+  "license": "MIT",
+  "dependencies": {
+    "chunk": "0.0.2",
+    "preact": "~8.2.6"
+  },
+  "devDependencies": {
+    "@types/expect": "^1.20.4",
+    "@types/jest": "^24.0.6",
+    "expect": "^24.1.0",
+    "jest": "^24.1.0",
+    "ts-jest": "^24.0.0",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.3.3",
+    "webpack": "^4.29.4",
+    "webpack-cli": "^3.2.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "./tsconfig.json"
+      }
+    }
+  }
+}
